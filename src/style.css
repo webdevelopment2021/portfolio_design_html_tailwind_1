@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+
+@layer components {
+    .mh-nav-btn {
+        @apply px-3 py-4 rounded-md text-gray-200 hover:text-neutral-900 hover:bg-gray-200;
+    }
+
+}
