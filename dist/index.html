@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 
 <body class="bg-blue-950">
     <nav>
         <div class="mx-auto max-w-7xl px-2">
-            <div class="flex h-16 items-center justify-between">
+            <div class="lg:flex lg:h-16 items-center justify-between">
                 <ul>
-                    <li><a class="mh-nav-btn" href="/">MH</a></li>
+                    <li><a class="mh-nav-btn block" href="/">MH</a></li>
                 </ul>
-                <ul class="flex">
-                    <li><a class="mh-nav-btn" href="#home">Home</a></li>
-                    <li><a class="mh-nav-btn" href="#about">About</a></li>
-                    <li><a class="mh-nav-btn" href="#expertise">Expertise</a></li>
-                    <li><a class="mh-nav-btn" href="#contact">Contact</a></li>
+                <ul class="flex flex-col lg:flex-row border-y lg:border-y-0">
+                    <li><a class="mh-nav-btn block" href="#home">Home</a></li>
+                    <li><a class="mh-nav-btn block" href="#about">About</a></li>
+                    <li><a class="mh-nav-btn block" href="#expertise">Expertise</a></li>
+                    <li><a class="mh-nav-btn block" href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -27,48 +27,132 @@
     </nav>
 
     <!-- section 1 start -->
-    <div id="home" class="h-0 min-h-[650px] lg:flex">
-        <div class="flex-1">
-            <div class="flex items-center min-h-full">
-                <div class="px-6 text-gray-200 w-4/5 mx-auto">
-                    <h1 class="text-5xl py-5">Hi, I'm Habib</h1>
-                    <p class="text-justify indent-5">"I am a skilled PHP developer with a strong passion for web
-                        development. Over the past year, I have honed my expertise in PHP and have become adept at
-                        building robust and scalable applications. I enjoy the challenge of building complex back-end
-                        systems and integrating them with front-end technologies to create seamless user experiences. I
-                        believe that programming is an art form, and I take great pride in crafting elegant and
-                        efficient code that meets the needs of my clients. I am always eager to learn new techniques and
-                        technologies and am committed to staying up-to-date with the latest trends in the industry."</p>
-                    <div class="mt-12">
-                        <button class="mh-nav-btn border-2 w-32 font-bold rounded-xl">Hire Me</button>
-                    </div>
-                    <div class="mt-12 flex">
-                        <a href="https://www.facebook.com/mhabib555" class="mx-1">
-                            <svg class="w-12 border-2 rounded-full p-2 hover:bg-[#fff]" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Facebook</title>
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                                    fill="#1877f2" />
-                            </svg>
-                        </a>
-                        <a href="https://www.twitter.com/mdhabib555" class="mx-1">
-                            <svg class="w-12 border-2 rounded-full p-2 hover:bg-[#fff]" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Twitter</title>
-                                <path
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                                    fill="#1DA1F2" />
-                            </svg>
-                        </a>
+    <div id="home" class="py-24 lg:py-5">
+        <div class="min-h-[650px] lg:flex">
+            <div class="flex-1">
+                <div class="flex items-center lg:min-h-full">
+                    <div class="px-6 text-gray-200 w-4/5 mx-auto">
+                        <h1 class="text-5xl py-5">Hi, I'm Habib</h1>
+                        <p class="text-justify indent-5">"I am a skilled PHP developer with a strong passion for web
+                            development. Over the past year, I have honed my expertise in PHP and have become adept at
+                            building robust and scalable applications. I enjoy the challenge of building complex
+                            back-end
+                            systems and integrating them with front-end technologies to create seamless user
+                            experiences. I
+                            believe that programming is an art form, and I take great pride in crafting elegant and
+                            efficient code that meets the needs of my clients. I am always eager to learn new techniques
+                            and
+                            technologies and am committed to staying up-to-date with the latest trends in the industry."
+                        </p>
+                        <div class="mt-12">
+                            <a href="#contact"
+                                class="mh-nav-btn border-2 w-64 block text-center font-bold rounded-xl">Hire Me</a>
+                        </div>
+                        <div class="mt-12 flex">
+                            <a href="https://www.facebook.com/mhabib555" class="mx-1">
+                                <svg class="w-12 border-2 rounded-full p-2 hover:bg-[#fff]" role="img"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                        fill="#1877f2" />
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com/mdhabib555" class="mx-1">
+                                <svg class="w-12 border-2 rounded-full p-2 hover:bg-[#fff]" role="img"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Twitter</title>
+                                    <path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                                        fill="#1DA1F2" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="flex-1">
-            <div class="flex items-center">
-                <div class="px-6 w-4/6 mx-auto mt-7">
-                    <img src="assets/images/profilePicture.png" class="w-full" alt="Profile Picture">
+            <div class="flex-1">
+                <div class="flex items-center">
+                    <div class="px-6 lg:w-4/6 mx-auto lg:mt-7">
+                        <?xml version="1.0" standalone="no"?>
+                        <!DOCTYPE svg
+                            PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                        <svg class="w-full" version="1.0" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 387.000000 468.000000" preserveAspectRatio="xMidYMid meet">
+                            <metadata>
+                                Created by potrace 1.16, written by Peter Selinger 2001-2019
+                            </metadata>
+                            <g transform="translate(0.000000,468.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
+                                <path d="M1690 4075 c-48 -7 -103 -24 -152 -48 -43 -20 -81 -37 -86 -37 -5 0
+                        -27 -13 -48 -29 -22 -15 -56 -36 -76 -45 -41 -20 -102 -83 -194 -201 -30 -38
+                        -144 -221 -144 -230 0 -3 -27 -69 -61 -147 -57 -134 -61 -147 -66 -242 -3 -56
+                        0 -132 6 -171 42 -273 64 -378 79 -383 7 -2 9 -15 5 -33 -7 -35 10 -81 48
+                        -130 15 -20 31 -50 34 -65 4 -16 14 -46 23 -67 22 -53 32 -30 38 90 3 54 9
+                        127 15 163 13 85 66 243 95 286 13 18 32 62 42 96 34 108 69 176 119 231 27
+                        28 60 69 73 90 14 20 32 39 41 42 9 3 29 19 45 35 16 16 39 30 50 30 12 0 48
+                        12 80 26 54 24 72 27 214 30 243 5 511 -39 570 -94 14 -13 40 -32 57 -43 54
+                        -34 92 -101 104 -182 5 -40 9 -92 8 -117 -1 -25 1 -53 4 -62 4 -10 10 -26 14
+                        -35 3 -10 5 -23 4 -30 -1 -6 3 -14 9 -18 25 -16 -2 -125 -31 -125 -5 0 -27 12
+                        -49 26 -36 24 -41 25 -77 13 -21 -7 -42 -12 -48 -10 -11 3 -142 2 -171 -2 -22
+                        -3 -79 -23 -107 -38 -10 -5 -22 -7 -27 -4 -14 9 -50 -18 -50 -37 0 -10 -4 -18
+                        -10 -18 -5 0 -10 -9 -10 -20 0 -12 -7 -32 -16 -46 -13 -19 -16 -41 -12 -97 5
+                        -81 19 -113 76 -174 36 -39 40 -41 55 -26 15 15 19 15 56 -1 30 -14 51 -16 90
+                        -11 28 4 71 7 96 7 25 1 45 5 45 10 0 4 12 8 28 8 15 0 36 7 46 15 11 8 30 15
+                        42 15 22 0 34 17 34 51 0 10 7 19 15 19 8 0 15 7 15 15 0 17 16 20 25 6 3 -5
+                        17 1 30 15 14 14 29 23 34 19 25 -15 -14 -215 -41 -215 -5 0 -8 -19 -8 -43 0
+                        -23 -6 -52 -14 -63 -8 -11 -17 -46 -20 -77 -5 -59 -24 -117 -39 -117 -5 0 -5
+                        -4 -2 -10 3 -6 -1 -7 -10 -4 -18 7 -44 -21 -45 -48 0 -9 -7 -21 -17 -26 -14
+                        -9 -14 -10 5 -16 12 -4 26 -4 32 -1 5 3 10 1 10 -4 0 -6 -11 -11 -24 -11 -27
+                        0 -61 -43 -52 -67 4 -11 2 -13 -9 -9 -8 3 -15 2 -15 -3 0 -13 -62 -23 -74 -11
+                        -5 5 -18 10 -27 10 -10 0 -30 5 -46 12 -15 6 -36 13 -46 15 -36 6 -57 24 -57
+                        46 0 12 -7 32 -15 44 -9 12 -15 26 -14 30 1 4 1 17 0 28 -1 19 -7 21 -88 20
+                        -73 -1 -95 -5 -129 -24 -48 -27 -85 -25 -176 8 -48 17 -62 19 -83 9 -24 -11
+                        -26 -17 -23 -57 l3 -46 -45 -15 c-25 -8 -51 -19 -58 -23 -7 -5 -21 -6 -31 -2
+                        -27 8 -103 -37 -120 -71 -8 -16 -20 -40 -27 -54 -10 -20 -10 -31 2 -59 8 -18
+                        14 -50 14 -71 0 -31 -4 -40 -21 -45 -15 -5 -18 -9 -9 -15 10 -6 9 -9 -1 -16
+                        -7 -4 -14 -3 -17 4 -2 7 -8 9 -13 6 -6 -3 -16 0 -24 6 -12 10 -15 8 -16 -11
+                        l0 -24 -9 23 c-5 12 -14 22 -20 22 -7 0 -9 8 -5 21 7 21 -18 59 -39 59 -7 0
+                        -20 15 -30 32 -11 18 -27 41 -38 51 -17 17 -18 17 -18 0 0 -21 -152 -94 -270
+                        -129 -89 -27 -184 -62 -260 -98 -31 -15 -73 -26 -96 -26 -31 0 -55 -9 -91 -34
+                        -28 -19 -101 -55 -164 -81 -106 -43 -241 -118 -276 -153 -11 -11 -11 -17 -3
+                        -22 9 -5 9 -9 1 -14 -8 -5 -11 -155 -11 -517 l0 -509 1935 0 1935 0 0 420 c0
+                        245 -4 420 -9 420 -5 0 -43 29 -84 64 -85 72 -161 118 -239 145 -29 10 -76 34
+                        -105 54 -29 19 -74 43 -100 53 -26 9 -61 27 -78 39 -16 12 -104 60 -194 106
+                        -191 98 -321 200 -377 295 l-26 44 31 107 c24 83 38 113 59 130 21 18 23 23
+                        10 23 -18 0 -25 30 -10 44 8 9 13 47 15 141 2 56 5 70 18 73 10 2 26 24 38 50
+                        11 26 20 41 21 35 0 -7 4 -13 9 -13 17 0 44 138 37 190 -7 49 3 94 41 195 37
+                        100 53 211 60 412 7 233 12 209 -98 440 -67 141 -69 144 -181 256 -134 134
+                        -153 146 -433 267 -98 42 -122 49 -211 55 -61 4 -108 13 -123 22 -30 19 -147
+                        23 -251 8z m796 -2920 c-9 -14 -12 -25 -6 -25 5 0 10 5 10 11 0 5 4 8 9 4 6
+                        -3 6 -17 -1 -35 -5 -17 -14 -28 -18 -25 -4 3 -6 -3 -4 -12 3 -10 -14 -54 -36
+                        -98 -22 -44 -40 -85 -40 -91 0 -6 -20 -33 -45 -60 -53 -57 -71 -87 -78 -130
+                        -10 -62 -47 -122 -104 -171 -97 -80 -183 -169 -183 -187 0 -9 9 -20 20 -24 19
+                        -7 18 -11 -22 -62 -86 -109 -208 -240 -223 -240 -16 0 -33 39 -56 129 -11 41
+                        -32 102 -48 135 -16 34 -52 119 -80 189 -28 70 -57 141 -66 156 -8 16 -16 65
+                        -19 108 l-5 80 46 -8 c26 -5 47 -8 48 -7 17 33 21 57 13 71 -7 14 -4 19 17 27
+                        37 14 56 12 70 -7 10 -13 33 -17 121 -19 62 -1 114 2 121 8 7 5 25 9 40 7 53
+                        -4 198 47 209 74 2 7 27 27 54 43 27 16 50 34 50 41 0 7 9 17 20 23 11 6 20 8
+                        20 6 0 -3 10 5 23 17 13 12 32 28 43 35 10 7 13 10 7 7 -7 -3 -13 -2 -13 3 0
+                        12 24 22 50 22 10 0 22 5 26 12 5 7 3 8 -7 3 -12 -7 -12 -6 -1 7 8 9 20 14 28
+                        11 8 -3 14 1 15 8 0 11 2 11 6 1 3 -7 -2 -24 -11 -37z" />
+                                <path d="M1296 2720 c-75 -38 -106 -84 -106 -159 0 -47 17 -62 39 -34 28 36
+                        82 54 168 59 86 5 166 -8 188 -30 11 -11 -5 -14 -98 -18 -116 -5 -150 -15
+                        -194 -58 -24 -21 -31 -74 -13 -85 5 -3 19 -1 30 5 18 10 24 7 42 -15 13 -17
+                        24 -23 30 -17 6 6 19 1 35 -14 25 -23 53 -23 53 2 0 8 -10 14 -25 14 -16 0
+                        -23 4 -19 13 3 8 -6 19 -21 25 -27 13 -29 35 -4 40 9 1 22 -12 32 -33 13 -28
+                        22 -35 45 -35 15 0 37 -7 48 -15 10 -8 30 -15 42 -15 15 0 26 -7 29 -20 10
+                        -38 122 -16 115 23 -2 9 2 17 9 17 7 0 9 -9 5 -24 -9 -38 7 -38 46 0 36 35 38
+                        40 53 162 2 20 0 30 -7 26 -6 -4 -8 1 -4 14 4 11 2 23 -4 27 -5 3 -10 -2 -10
+                        -12 -1 -17 -1 -17 -11 0 -11 18 -3 41 11 32 5 -3 12 -1 15 5 4 6 1 9 -7 8 -7
+                        -2 -12 4 -10 14 2 12 -2 16 -13 12 -17 -7 -21 11 -5 21 12 7 13 35 2 35 -5 0
+                        -15 -11 -22 -25 -10 -18 -16 -22 -21 -13 -5 7 -4 17 1 22 6 6 10 15 10 21 0 5
+                        -4 3 -10 -5 -7 -12 -12 -12 -29 4 -21 19 -21 19 -21 -2 0 -13 -6 -22 -15 -22
+                        -8 0 -15 5 -15 11 0 7 -27 9 -77 7 -43 -1 -82 0 -88 3 -5 4 -36 12 -67 19 -32
+                        6 -60 16 -63 21 -9 13 -25 11 -69 -11z" />
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,23 +160,29 @@
     <!-- section 1 end -->
 
     <!-- section 2 start -->
-    <div id="about" class="h-0 min-h-[650px] lg:flex bg-gray-500">
-        <div class="flex-1">
-            <div class="min-h-full flex items-center ml-24">
-                <img src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    class="w-full rounded-2xl">
+    <div id="about" class="lg:py-5 py-24 bg-gray-500">
+        <div class="min-h-[650px] lg:flex">
+            <div class="flex-1">
+                <div class="lg:min-h-full flex items-center lg:ml-24 mx-10">
+                    <img src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="w-full rounded-2xl">
+                </div>
             </div>
-        </div>
-        <div class="flex-1">
-            <div class="flex items-center min-h-full">
-                <div class="px-6 py-10 text-gray-200 w-4/5 mx-auto bg-blue-950">
-                    <h2 class="text-3xl py-5 uppercase">About Me</h2>
-                    <p class="text-justify indent-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At autem
-                        eius earum accusamus atque, tempore voluptate sequi dignissimos veritatis quo totam excepturi?
-                        Optio enim eaque deleniti fugit velit earum necessitatibus!</p>
-                    <p class="text-justify indent-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At autem
-                        eius earum accusamus atque, tempore voluptate sequi dignissimos veritatis quo totam excepturi?
-                        Optio enim eaque deleniti fugit velit earum necessitatibus!</p>
+            <div class="flex-1 pt-10 lg:pt-0">
+                <div class="flex items-center lg:min-h-full">
+                    <div class="px-6 py-10 text-gray-200 w-4/5 mx-auto bg-blue-950">
+                        <h2 class="text-3xl py-5 uppercase">About Me</h2>
+                        <p class="text-justify indent-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            autem
+                            eius earum accusamus atque, tempore voluptate sequi dignissimos veritatis quo totam
+                            excepturi?
+                            Optio enim eaque deleniti fugit velit earum necessitatibus!</p>
+                        <p class="text-justify indent-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            autem
+                            eius earum accusamus atque, tempore voluptate sequi dignissimos veritatis quo totam
+                            excepturi?
+                            Optio enim eaque deleniti fugit velit earum necessitatibus!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,38 +190,43 @@
     <!-- section 2 end -->
 
     <!-- section 3 start -->
-    <div id="expertise" class="h-0 min-h-[550px] text-gray-200">
-        <div class="text-center mt-32 mb-10">
-            <h2 class="text-4xl py-5 uppercase">My Expertise</h2>
-        </div>
-        <div class="lg:flex mx-auto max-w-6xl gap-7">
-            <div class="flex-1">
-                <div class="flex min-h-fit border-2">
-                    <div class="p-6 text-gray-200">
-                        <h3 class="text-2xl mb-3 text-center">PHP</h3>
-                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
-                            repudiandae aspernatur distinctio excepturi enim est molestias provident saepe voluptates
-                            reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+    <div id="expertise" class="lg:my-5 my-24 text-gray-200">
+        <div class="min-h-[550px]">
+            <div class="text-center mt-32 mb-10">
+                <h2 class="text-4xl py-5 uppercase">My Expertise</h2>
+            </div>
+            <div class="lg:flex mx-auto max-w-6xl gap-3">
+                <div class="flex-1">
+                    <div class="flex min-h-fit border-2 m-5">
+                        <div class="p-6 text-gray-200">
+                            <h3 class="text-2xl mb-3 text-center">PHP</h3>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
+                                repudiandae aspernatur distinctio excepturi enim est molestias provident saepe
+                                voluptates
+                                reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-1">
-                <div class="flex min-h-fit border-2">
-                    <div class="p-6 text-blue-950 bg-gray-200">
-                        <h3 class="text-2xl mb-3 text-center">Javascript</h3>
-                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
-                            repudiandae aspernatur distinctio excepturi enim est molestias provident saepe voluptates
-                            reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+                <div class="flex-1">
+                    <div class="flex min-h-fit border-2 m-5">
+                        <div class="p-6 text-blue-950 bg-gray-200">
+                            <h3 class="text-2xl mb-3 text-center">Javascript</h3>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
+                                repudiandae aspernatur distinctio excepturi enim est molestias provident saepe
+                                voluptates
+                                reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-1">
-                <div class="flex min-h-fit border-2">
-                    <div class="p-6 text-gray-200">
-                        <h3 class="text-2xl mb-3 text-center">Html, CSS</h3>
-                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
-                            repudiandae aspernatur distinctio excepturi enim est molestias provident saepe voluptates
-                            reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+                <div class="flex-1">
+                    <div class="flex min-h-fit border-2 m-5">
+                        <div class="p-6 text-gray-200">
+                            <h3 class="text-2xl mb-3 text-center">Html, CSS</h3>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nemo
+                                repudiandae aspernatur distinctio excepturi enim est molestias provident saepe
+                                voluptates
+                                reprehenderit dolores iusto velit totam quo sint optio minima perferendis.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,37 +236,40 @@
 
 
     <!-- section 4 start -->
-    <div id="contact" class="h-0 min-h-[650px] lg:flex bg-gray-500">
-        <div class="flex-1">
-            <div class="min-h-full flex items-center ml-24">
-                <img src="https://images.unsplash.com/photo-1584972191378-d70853fc47fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    class="w-full rounded-2xl" alt="Profile Picture">
-            </div>
-        </div>
-        <div class="flex-1">
-            <div class="flex items-center min-h-full">
-                <div class="px-6 py-10 text-gray-200 w-4/5 mx-auto bg-blue-950">
-                    <h2 class="text-3xl py-5 uppercase">Contact Me</h2>
-                    <table class="text-gray-200">
-                        <tr class="h-10">
-                            <td>Email :</td>
-                            <td>mhabib555@gmail.com</td>
-                        </tr>
-                        <tr class="h-10">
-                            <td>Phone :</td>
-                            <td><a href="tel:+974-77205265">+974-77205265</a></td>
-                        </tr>
-                        <tr class="h-10">
-                            <td>Email :</td>
-                            <td>mhabib555@gmail.com</td>
-                        </tr>
-                        <tr class="h-10">
-                            <td>Address :</td>
-                            <td>Doha, Qatar</td>
-                        </tr>
-                    </table>
+    <div id="contact" class="lg:py-5 py-24 bg-gray-500">
+        <div class="lg:flex lg:min-h-[550px]">
+            <div class="flex-1">
+                <div class="lg:min-h-full flex items-center mx-10 lg:ml-24">
+                    <img src="https://images.unsplash.com/photo-1584972191378-d70853fc47fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="w-full rounded-2xl" alt="Profile Picture">
                 </div>
             </div>
+            <div class="flex-1 pt-10 lg:pt-0">
+                <div class="flex items-center lg:min-h-full">
+                    <div class="px-6 py-10 text-gray-200 w-4/5 mx-auto bg-blue-950">
+                        <h2 class="text-3xl py-5 uppercase">Contact Me</h2>
+                        <table class="text-gray-200 text-xs md:text-sm">
+                            <tr class="h-10">
+                                <td>Email :</td>
+                                <td>mhabib555@gmail.com</td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>Phone :</td>
+                                <td><a href="tel:+974-77205265">+974-77205265</a></td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>Email :</td>
+                                <td>mhabib555@gmail.com</td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>Address :</td>
+                                <td>Doha, Qatar</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- section 4 end -->
@@ -179,17 +277,14 @@
 
     <!-- section 5 start -->
     <div class="text-gray-200">
-        <div class="lg:flex justify-around h-16 items-center">
-            <div class="flex-12">
-                <ul class="flex">
-                    <li><a class="mh-nav-btn" href="#home">Home</a></li>
-                    <li><a class="mh-nav-btn" href="#about">About</a></li>
-                    <li><a class="mh-nav-btn" href="#expertise">Expertise</a></li>
-                    <li><a class="mh-nav-btn" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+        <div class="flex justify-center h-16">
+            <ul class="flex items-center">
+                <li><a class="mh-nav-btn" href="#home">Home</a></li>
+                <li><a class="mh-nav-btn" href="#about">About</a></li>
+                <li><a class="mh-nav-btn" href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="lg:flex justify-around  h-16 items-center border-t">
+        <div class="flex justify-around  h-16 items-center border-t">
             <div>
                 <p>2023 &copy; M Habib</p>
             </div>
